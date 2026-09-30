@@ -1,0 +1,20 @@
+{
+  "name": "travelready",
+  "version": "1.0.0",
+  "description": "TRAVELREADY – Website Informasi & Persiapan Traveling",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -c-1 -p 3000 -o",
+    "dev": "npx http-server -c-1 -p 3000 -o"
+  },
+  "keywords": [
+    "travel",
+    "checklist",
+    "packing-guide",
+    "travel-planner",
+    "3d-design",
+    "maroon-theme"
+  ],
+  "author": "TRAVELREADY Team",
+  "license": "MIT"
+}

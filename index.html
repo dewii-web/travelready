@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVELREADY – Info Persiapan Traveling</title>
+    <meta name="description" content="Persiapkan perjalananmu dengan lebih mudah. Atur barang, dokumen, transportasi, dan budget dalam satu tempat.">
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+
+    <!-- Sticky Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">
+                <span class="brand-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v11z"></path>
+                        <path d="M6 6V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                </span>
+                <span class="brand-text">TRAVELREADY</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#packing" class="nav-link">Checklist</a>
+                <a href="#dokumen" class="nav-link">Dokumen</a>
+                <a href="#packing" class="nav-link">Packing</a>
+                <a href="#transportasi" class="nav-link">Transportasi</a>
+                <a href="#budget" class="nav-link">Budget</a>
+                <a href="#riwayat" class="nav-link">Riwayat</a>
+                <a href="#planner" class="nav-link">Plan Your Trip <span class="nav-badge-opt">Opsional</span></a>
+                <a href="#packing" class="btn btn-primary btn-sm mobile-cta">Mulai</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#packing" class="btn btn-primary btn-nav">Mulai</a>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge fade-in">
+                        <span class="dot"></span> TRAVELREADY
+                    </div>
+                    <h1 class="hero-title fade-up">
+                        Travel Ready,<br>
+                        <span class="text-maroon">Stress Free.</span>
+                    </h1>
+                    <p class="hero-description fade-up delay-1">
+                        Persiapkan perjalananmu dengan lebih mudah. Atur barang, dokumen, transportasi, dan budget dalam satu tempat.
+                    </p>
+                    <div class="hero-cta fade-up delay-2">
+                        <a href="#packing" class="btn btn-primary btn-lg">
+                            Mulai Persiapan
+                            <svg class="btn-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual fade-in delay-1">
+                    <div class="hero-illustration-wrapper">
+                        <img src="assets/images/hero_suitcase.jpg" alt="TRAVELREADY Suitcase 3D Illustration" class="hero-img floating-anim">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner Quote -->
+            <div class="container margin-top-lg">
+                <div class="quote-banner fade-up">
+                    <div class="quote-icon">“</div>
+                    <p class="quote-text">Siapkan Perjalananmu, Nikmati Perjalanannya.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN FEATURES / PERSIAPKAN PERJALANANMU -->
+        <section class="section" id="features">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="badge">PERSIAPAN UTAMA</div>
+                    <h2 class="section-title">Persiapkan Perjalananmu</h2>
+                    <p class="section-subtitle">Langkah awal persiapan perjalanan yang teratur untuk liburan tanpa hambatan.</p>
+                </div>
+
+                <div class="features-grid">
+                    <a href="#packing" class="feature-card fade-up">
+                        <div class="feature-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11l3 3L22 4"></path>
+                                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+                            </svg>
+                        </div>
+                        <div class="feature-info">
+                            <h3>Checklist & Destinasi</h3>
+                            <p>Rekomendasi barang otomatis</p>
+                        </div>
+                        <div class="feature-arrow">→</div>
+                    </a>
+
+                    <a href="#dokumen" class="feature-card fade-up delay-1">
+                        <div class="feature-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                                <path d="M7 8h10M7 12h6"></path>
+                            </svg>
+                        </div>
+                        <div class="feature-info">
+                            <h3>Dokumen</h3>
+                            <p>Paspor, KTP & PDF offline</p>
+                        </div>
+                        <div class="feature-arrow">→</div>
+                    </a>
+
+                    <a href="#transportasi" class="feature-card fade-up delay-2">
+                        <div class="feature-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3.5c-.5-.5-2.5 0-4 1.5L13.5 8.5 5.3 6.7c-.5-.1-1 .1-1.3.5l-.8.8c-.4.4-.3 1.1.2 1.4l5.3 3.5-3.5 3.5-2.3-.6c-.4-.1-.8.1-1 .4l-.4.4c-.3.3-.2.8.2 1l2.5 1.5 1.5 2.5c.2.4.7.5 1 .2l.4-.4c.3-.3.5-.7.4-1l-.6-2.3 3.5-3.5 3.5 5.3c.3.5 1 .6 1.4.2l.8-.8c.4-.3.6-.8.5-1.3z"></path>
+                            </svg>
+                        </div>
+                        <div class="feature-info">
+                            <h3>Transportasi</h3>
+                            <p>Atur jam & timeline trip</p>
+                        </div>
+                        <div class="feature-arrow">→</div>
+                    </a>
+
+                    <a href="#budget" class="feature-card fade-up delay-3">
+                        <div class="feature-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                                <line x1="2" y1="10" x2="22" y2="10"></line>
+                            </svg>
+                        </div>
+                        <div class="feature-info">
+                            <h3>Budget</h3>
+                            <p>Hitung perkiraan biaya trip</p>
+                        </div>
+                        <div class="feature-arrow">→</div>
+                    </a>
+                </div>
+
+                <!-- OPTIONAL FEATURE CARD: PLAN YOUR NEXT TRIP -->
+                <div class="margin-top-md fade-up">
+                    <div class="optional-hero-card">
+                        <div class="opt-card-visual">
+                            <img src="assets/images/map_plane.jpg" alt="3D Map Plane Illustration" class="opt-3d-img floating-anim">
+                        </div>
+                        <div class="opt-card-content">
+                            <span class="badge-opt">Opsional</span>
+                            <h3>Plan Your Next Trip</h3>
+                            <p>Sudah punya rencana perjalanan berikutnya? Buat dan simpan rencana perjalananmu di sini sebelum hari keberangkatan.</p>
+                            <div class="margin-top-sm">
+                                <a href="#planner" class="btn btn-outline">
+                                    Plan Your Trip →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PACKING GUIDE & DESTINASI CHECKLIST PAGE -->
+        <section class="section" id="packing">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="badge">PACKING & DESTINASI</div>
+                    <h2 class="section-title">Checklist & Packing Guide</h2>
+                    <p class="section-subtitle">Pilih destinasi dan durasi perjalananmu untuk mendapatkan rekomendasi checklist barang otomatis.</p>
+                </div>
+
+                <div class="packing-container fade-up">
+
+                    <!-- SELEKSI DESTINASI (6 Options with 3D Icons) -->
+                    <div class="dest-selector-section">
+                        <h3 class="dest-section-title">1. Pilih Destinasi Perjalanan:</h3>
+                        <div class="dest-grid-selector" id="destinationGrid">
+
+                            <div class="dest-card active" data-dest="pantai">
+                                <div class="dest-icon-box">
+                                    <span class="dest-3d-badge">🏖️</span>
+                                </div>
+                                <span class="dest-name">Pantai</span>
+                                <span class="dest-check">✓</span>
+                            </div>
+
+                            <div class="dest-card" data-dest="gunung">
+                                <div class="dest-icon-box">
+                                    <span class="dest-3d-badge">⛰️</span>
+                                </div>
+                                <span class="dest-name">Gunung</span>
+                                <span class="dest-check">✓</span>
+                            </div>
+
+                            <div class="dest-card" data-dest="kota">
+                                <div class="dest-icon-box">
+                                    <span class="dest-3d-badge">🏙️</span>
+                                </div>
+                                <span class="dest-name">Kota</span>
+                                <span class="dest-check">✓</span>
+                            </div>
+
+                            <div class="dest-card" data-dest="camping">
+                                <div class="dest-icon-box">
+                                    <span class="dest-3d-badge">🌲</span>
+                                </div>
+                                <span class="dest-name">Alam / Camping</span>
+                                <span class="dest-check">✓</span>
+                            </div>
+
+                            <div class="dest-card" data-dest="budaya">
+                                <div class="dest-icon-box">
+                                    <span class="dest-3d-badge">🏛️</span>
+                                </div>
+                                <span class="dest-name">Wisata Budaya</span>
+                                <span class="dest-check">✓</span>
+                            </div>
+
+                            <div class="dest-card" data-dest="luar_negeri">
+                                <div class="dest-icon-box">
+                                    <span class="dest-3d-badge">✈️</span>
+                                </div>
+                                <span class="dest-name">Luar Negeri</span>
+                                <span class="dest-check">✓</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- SELEKSI DURASI -->
+                    <div class="duration-selector-section margin-top-md">
+                        <h3 class="dest-section-title">2. Pilih Durasi Perjalanan:</h3>
+                        <div class="btn-group-selector" id="durationSelector">
+                            <button class="select-btn active" data-duration="short">1–3 Hari</button>
+                            <button class="select-btn" data-duration="medium">4–7 Hari</button>
+                            <button class="select-btn" data-duration="long">> 7 Hari</button>
+                        </div>
+                    </div>
+
+                    <!-- AUTOMATIC DESTINATION CHECKLIST -->
+                    <div class="dest-checklist-card margin-top-lg fade-up" id="destChecklistCard">
+                        <div class="checklist-overview-card border-none">
+                            <div class="overview-visual">
+                                <img src="assets/images/hero_suitcase.jpg" alt="3D Destination Suitcase" class="mini-3d-img" id="destIllustrationImg">
+                            </div>
+                            <div class="overview-content">
+                                <div class="overview-header">
+                                    <h3 id="destChecklistTitle">Checklist Barang: Pantai (1–3 Hari)</h3>
+                                    <span class="counter-badge" id="destProgressText">0 dari 12 barang siap</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-fill" id="destProgressBar" style="width: 0%;"></div>
+                                </div>
+                                <p class="progress-status" id="destStatusText">Belum ada barang yang dicentang. Ayo persiapkan!</p>
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Checklist Content Container -->
+                        <div class="dest-checklist-body margin-top-md" id="destChecklistBody">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+
+                        <div class="checklist-actions margin-top-md">
+                            <button class="btn btn-primary btn-sm margin-right-sm" id="openAddChecklistModalBtn">
+                                + Tambah Item Custom
+                            </button>
+                            <button class="btn btn-outline btn-sm" id="resetChecklistBtn">
+                                Reset Checklist
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- PACKING TIPS BY DESTINATION -->
+                    <div class="packing-tips-card margin-top-lg fade-up" id="destTipsCard">
+                        <div class="tips-box-title text-maroon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            Tips Packing Khusus Destinasi:
+                        </div>
+                        <p class="margin-top-xs" id="destPackingTipText">
+                            Gunakan waterproof pouch untuk melindungi HP dari air & pasir, serta terapkan metode gulung pakaian.
+                        </p>
+                    </div>
+
+                    <!-- Next Section Button (Simpan & Lanjut) -->
+                    <div class="section-nav-footer text-center margin-top-lg">
+                        <button class="btn btn-primary btn-lg" id="saveChecklistSecBtn">
+                            Simpan & Lanjut ke Dokumen →
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- DOKUMEN PAGE -->
+        <section class="section bg-light" id="dokumen">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="badge">DOKUMEN PENTING</div>
+                    <h2 class="section-title">Travel Documents</h2>
+                    <p class="section-subtitle">Pastikan dokumen penting aman dan terorganisir sebelum melakukan perjalanan.</p>
+                </div>
+
+                <div class="documents-wrapper fade-up">
+                    <div class="doc-illustration-box text-center">
+                        <img src="assets/images/passport.jpg" alt="3D Passport Illustration" class="doc-3d-img floating-anim">
+                    </div>
+
+                    <div class="doc-grid margin-top-md">
+                        <!-- Domestik Card -->
+                        <div class="doc-card">
+                            <div class="doc-card-header">
+                                <h3>DOMESTIK</h3>
+                                <span class="doc-tag">Perjalanan Dalam Negeri</span>
+                            </div>
+                            <div class="doc-list" id="domestikDocList">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Internasional Card -->
+                        <div class="doc-card">
+                            <div class="doc-card-header">
+                                <h3>INTERNASIONAL</h3>
+                                <span class="doc-tag">Perjalanan Luar Negeri</span>
+                            </div>
+                            <div class="doc-list" id="internasionalDocList">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center margin-top-lg">
+                        <button class="btn btn-primary btn-sm margin-right-sm" id="openAddDocModalBtn">
+                            + Tambah Dokumen
+                        </button>
+                        <button class="btn btn-outline btn-sm" id="openDocModalBtn">
+                            Cek Dokumen
+                        </button>
+                    </div>
+
+                    <!-- PDF UPLOAD SECTION -->
+                    <div class="pdf-upload-card margin-top-lg fade-up">
+                        <div class="pdf-upload-header text-center">
+                            <h3>Validasi Dokumen Cepat (PDF)</h3>
+                            <p class="text-muted">Unggah e-ticket atau dokumen perjalanan PDF untuk disimpan secara offline di perangkat ini.</p>
+                        </div>
+
+                        <div class="pdf-dropzone margin-top-md" id="pdfDropzone">
+                            <input type="file" id="pdfFileInput" accept="application/pdf" class="pdf-input-hidden">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7A1F2B" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                            <p class="margin-top-xs"><strong>Klik atau seret file PDF ke sini</strong></p>
+                            <span class="file-hint">Format: .PDF (Maksimal 10 MB)</span>
+                        </div>
+
+                        <!-- Uploaded PDF List -->
+                        <div class="pdf-file-list margin-top-md" id="pdfFileList">
+                            <!-- Rendered dynamically from IndexedDB -->
+                        </div>
+
+                        <div class="pdf-disclaimer margin-top-sm text-center">
+                            <span class="disclaimer-text">🔒 Dokumen disimpan secara lokal di browser perangkat ini menggunakan IndexedDB.</span>
+                        </div>
+                    </div>
+
+                    <!-- Next Section Button (Simpan & Lanjut) -->
+                    <div class="section-nav-footer text-center margin-top-lg">
+                        <button class="btn btn-primary btn-lg" id="saveDocsSecBtn">
+                            Simpan & Lanjut ke Transportasi →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRANSPORTASI PAGE -->
+        <section class="section" id="transportasi">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="badge">MODA TRANSPORTASI</div>
+                    <h2 class="section-title">Transportation</h2>
+                    <p class="section-subtitle">Pilih dan atur detail moda transportasi perjalananmu secara terstruktur.</p>
+                </div>
+
+                <div class="transport-grid fade-up">
+                    <div class="transport-card active" data-transport="kereta">
+                        <div class="transport-icon-box icon-anim-kereta">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="4" y="3" width="16" height="15" rx="2"></rect>
+                                <line x1="4" y1="11" x2="20" y2="11"></line>
+                                <circle cx="8" cy="15" r="1"></circle>
+                                <circle cx="16" cy="15" r="1"></circle>
+                                <path d="M8 18l-3 3M16 18l3 3"></path>
+                            </svg>
+                        </div>
+                        <h3>Kereta</h3>
+                        <p class="transport-short">Perjalanan Darat Antarkota</p>
+                    </div>
+
+                    <div class="transport-card" data-transport="bus">
+                        <div class="transport-icon-box icon-anim-bus">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="14" rx="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <circle cx="7" cy="14" r="1"></circle>
+                                <circle cx="17" cy="14" r="1"></circle>
+                                <line x1="6" y1="17" x2="6" y2="20"></line>
+                                <line x1="18" y1="17" x2="18" y2="20"></line>
+                            </svg>
+                        </div>
+                        <h3>Bus</h3>
+                        <p class="transport-short">Opsi Hemat & Terjangkau</p>
+                    </div>
+
+                    <div class="transport-card" data-transport="pesawat">
+                        <div class="transport-icon-box icon-anim-pesawat">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3.5c-.5-.5-2.5 0-4 1.5L13.5 8.5 5.3 6.7c-.5-.1-1 .1-1.3.5l-.8.8c-.4.4-.3 1.1.2 1.4l5.3 3.5-3.5 3.5-2.3-.6c-.4-.1-.8.1-1 .4l-.4.4c-.3.3-.2.8.2 1l2.5 1.5 1.5 2.5c.2.4.7.5 1 .2l.4-.4c.3-.3.5-.7.4-1l-.6-2.3 3.5-3.5 3.5 5.3c.3.5 1 .6 1.4.2l.8-.8c.4-.3.6-.8.5-1.3z"></path>
+                            </svg>
+                        </div>
+                        <h3>Pesawat</h3>
+                        <p class="transport-short">Cepat & Jarak Jauh</p>
+                    </div>
+
+                    <div class="transport-card" data-transport="mobil">
+                        <div class="transport-icon-box icon-anim-mobil">
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 17h14v-5H5v5z"></path>
+                                <path d="M16 7L14 3H10L8 7H3v10h2a2 2 0 004 0h6a2 2 0 004 0h2V7h-3z"></path>
+                                <circle cx="7" cy="17" r="2"></circle>
+                                <circle cx="17" cy="17" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3>Mobil</h3>
+                        <p class="transport-short">Fleksibel & Nyaman</p>
+                    </div>
+                </div>
+
+                <!-- Transport Detail & Schedule Form -->
+                <div class="transport-form-card fade-up margin-top-md">
+                    <h3>Atur Detail Jadwal Transportasi</h3>
+                    <form id="transportForm" onsubmit="return false;">
+                        <input type="hidden" id="trType" value="kereta">
+                        
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="trTimeDept">Jam Berangkat <span class="required">*</span></label>
+                                <input type="time" id="trTimeDept" value="08:00" required>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="trTimePrep">Waktu Persiapan <span class="required">*</span></label>
+                                <input type="time" id="trTimePrep" value="06:30" required>
+                            </div>
+                        </div>
+
+                        <!-- Preparation duration summary banner -->
+                        <div class="prep-summary-box" id="prepSummaryBox">
+                            <span>⏱️ Selisih Waktu Persiapan: <strong>1 jam 30 menit</strong> sebelum berangkat</span>
+                        </div>
+
+                        <div class="form-row margin-top-sm">
+                            <div class="form-group col-6">
+                                <label for="trOrigin" id="trOriginLabel">Stasiun Keberangkatan <span class="required">*</span></label>
+                                <input type="text" id="trOrigin" placeholder="Contoh: Stasiun Cirebon" required>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="trDest" id="trDestLabel">Stasiun Tujuan <span class="required">*</span></label>
+                                <input type="text" id="trDest" placeholder="Contoh: Stasiun Gambir" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row margin-top-sm">
+                            <div class="form-group col-6">
+                                <label for="trNumber" id="trNumberLabel">Nomor Kereta / Kode (Opsional)</label>
+                                <input type="text" id="trNumber" placeholder="Contoh: Argo Cheribon (KA 25A)">
+                            </div>
+                            <div class="form-group col-6" id="trExtraGroup">
+                                <label for="trNotes">Catatan / Gate</label>
+                                <input type="text" id="trNotes" placeholder="Catatan khusus...">
+                            </div>
+                        </div>
+
+                        <div class="margin-top-md flex-gap">
+                            <button type="button" class="btn btn-primary" id="saveTransportBtn">
+                                Simpan Jadwal
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Scheduled Transports List & Timeline -->
+                <div class="scheduled-transports-container margin-top-lg fade-up">
+                    <div class="section-header text-center">
+                        <div class="badge">TRIP TIMELINE</div>
+                        <h3 class="section-title" style="font-size: 1.5rem;">Jadwal & Timeline Perjalanan</h3>
+                    </div>
+
+                    <div class="timeline-wrapper" id="transportTimeline">
+                        <!-- Populated dynamically -->
+                    </div>
+                </div>
+
+                <!-- Next Section Button (Simpan & Lanjut) -->
+                <div class="section-nav-footer text-center margin-top-lg">
+                    <button class="btn btn-primary btn-lg" id="saveTransSecBtn">
+                        Simpan & Lanjut ke Budget →
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- BUDGET PAGE -->
+        <section class="section bg-light" id="budget">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="badge">ESTIMASI BIAYA</div>
+                    <h2 class="section-title">Travel Budget</h2>
+                    <p class="section-subtitle">Hitung estimasi pengeluaran perjalananmu agar keuangan tetap terkontrol.</p>
+                </div>
+
+                <div class="budget-wrapper fade-up">
+                    <div class="budget-visual text-center">
+                        <img src="assets/images/wallet.jpg" alt="3D Wallet Illustration" class="budget-3d-img floating-anim">
+                    </div>
+
+                    <div class="budget-grid margin-top-md">
+                        <!-- Form Card -->
+                        <div class="budget-form-card">
+                            <h3>Rincian Perkiraan Biaya</h3>
+                            <form id="budgetForm" onsubmit="return false;">
+                                <div class="form-group">
+                                    <label for="bgTransport">Transportasi (Rp)</label>
+                                    <input type="number" id="bgTransport" placeholder="Contoh: 700000" min="0" value="700000">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="bgHotel">Hotel / Akomodasi (Rp)</label>
+                                    <input type="number" id="bgHotel" placeholder="Contoh: 800000" min="0" value="800000">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="bgMakan">Makan & Minum (Rp)</label>
+                                    <input type="number" id="bgMakan" placeholder="Contoh: 500000" min="0" value="500000">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="bgAktivitas">Aktivitas & Wisata (Rp)</label>
+                                    <input type="number" id="bgAktivitas" placeholder="Contoh: 300000" min="0" value="300000">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="bgLainnya">Lainnya / Cadangan (Rp)</label>
+                                    <input type="number" id="bgLainnya" placeholder="Contoh: 200000" min="0" value="200000">
+                                </div>
+
+                                <button type="button" class="btn btn-primary btn-full margin-top-sm" id="calcBudgetBtn">
+                                    Hitung Budget
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Result Card -->
+                        <div class="budget-result-card">
+                            <div class="total-budget-box">
+                                <span>Total Estimasi Biaya</span>
+                                <h2 class="total-amount" id="totalBudgetDisplay">Rp 2.500.000</h2>
+                            </div>
+
+                            <div class="breakdown-list" id="budgetBreakdown">
+                                <div class="breakdown-item">
+                                    <div class="breakdown-label">
+                                        <span>Transportasi</span>
+                                        <strong id="valTransport">Rp 700.000</strong>
+                                    </div>
+                                    <div class="breakdown-bar-bg">
+                                        <div class="breakdown-bar-fill" style="width: 28%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="breakdown-item">
+                                    <div class="breakdown-label">
+                                        <span>Hotel / Akomodasi</span>
+                                        <strong id="valHotel">Rp 800.000</strong>
+                                    </div>
+                                    <div class="breakdown-bar-bg">
+                                        <div class="breakdown-bar-fill" style="width: 32%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="breakdown-item">
+                                    <div class="breakdown-label">
+                                        <span>Makan & Minum</span>
+                                        <strong id="valMakan">Rp 500.000</strong>
+                                    </div>
+                                    <div class="breakdown-bar-bg">
+                                        <div class="breakdown-bar-fill" style="width: 20%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="breakdown-item">
+                                    <div class="breakdown-label">
+                                        <span>Aktivitas & Wisata</span>
+                                        <strong id="valAktivitas">Rp 300.000</strong>
+                                    </div>
+                                    <div class="breakdown-bar-bg">
+                                        <div class="breakdown-bar-fill" style="width: 12%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="breakdown-item">
+                                    <div class="breakdown-label">
+                                        <span>Lainnya / Cadangan</span>
+                                        <strong id="valLainnya">Rp 200.000</strong>
+                                    </div>
+                                    <div class="breakdown-bar-bg">
+                                        <div class="breakdown-bar-fill" style="width: 8%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Finish Travel Prep Button -->
+                    <div class="section-nav-footer text-center margin-top-lg">
+                        <button class="btn btn-primary btn-lg" id="finishTripBtn">
+                            Simpan & Selesai Persiapan →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SELESAI / RINGKASAN PERSIAPAN SECTION -->
+        <section class="section" id="selesai">
+            <div class="container text-center">
+                <div class="selesai-wrapper fade-up">
+                    <div class="selesai-visual">
+                        <img src="assets/images/hero_suitcase.jpg" alt="3D Suitcase Success" class="selesai-3d-img floating-anim">
+                    </div>
+                    <div class="badge margin-top-md">✓ PERSIAPAN SELESAI</div>
+                    <h2 class="section-title margin-top-xs">Persiapan Perjalanan Selesai!</h2>
+                    <p class="section-subtitle">Semua data persiapan perjalananmu telah terorganisir dengan rapi dan otomatis tersimpan di Riwayat.</p>
+
+                    <!-- Summary Checklist Grid -->
+                    <div class="selesai-summary-grid margin-top-md">
+                        <div class="summary-check-card">
+                            <span class="check-icon">✓</span>
+                            <span>Checklist Barang</span>
+                        </div>
+                        <div class="summary-check-card">
+                            <span class="check-icon">✓</span>
+                            <span>Dokumen Perjalanan</span>
+                        </div>
+                        <div class="summary-check-card">
+                            <span class="check-icon">✓</span>
+                            <span>Moda Transportasi</span>
+                        </div>
+                        <div class="summary-check-card">
+                            <span class="check-icon">✓</span>
+                            <span>Estimasi Budget</span>
+                        </div>
+                    </div>
+
+                    <p class="selesai-note margin-top-md text-maroon font-weight-bold">“Semua persiapan perjalananmu sudah tersimpan.”</p>
+
+                    <div class="selesai-actions margin-top-md flex-gap justify-center">
+                        <a href="#riwayat" class="btn btn-primary btn-lg" id="viewHistoryFromSelesaiBtn">
+                            Lihat Riwayat →
+                        </a>
+                        <a href="#planner" class="btn btn-outline btn-lg">
+                            Plan Your Next Trip →
+                        </a>
+                    </div>
+                    <p class="sub-label-text text-muted margin-top-xs">Opsional — untuk merencanakan perjalanan berikutnya.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RIWAYAT PAGE -->
+        <section class="section bg-light" id="riwayat">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="badge">RIWAYAT PERJALANAN</div>
+                    <h2 class="section-title">Riwayat Perjalanan</h2>
+                    <p class="section-subtitle">Semua perjalanan yang sudah kamu persiapkan tersimpan di sini.</p>
+                </div>
+
+                <div class="riwayat-wrapper fade-up">
+                    <div class="riwayat-visual text-center">
+                        <img src="assets/images/map_plane.jpg" alt="3D Travel Map Illustration" class="riwayat-3d-img floating-anim">
+                    </div>
+
+                    <!-- Saved Trips Grid -->
+                    <div class="riwayat-grid margin-top-md" id="riwayatGrid">
+                        <!-- Populated via JS -->
+                    </div>
+
+                    <!-- Empty State -->
+                    <div class="empty-state text-center margin-top-md hidden" id="riwayatEmptyState">
+                        <img src="assets/images/hero_suitcase.jpg" alt="Empty Suitcase" class="empty-3d-img">
+                        <h3>Belum ada riwayat perjalanan.</h3>
+                        <p class="text-muted margin-top-xs">Perjalanan yang sudah kamu persiapkan akan muncul di sini.</p>
+                        <div class="margin-top-md flex-gap justify-center">
+                            <a href="#packing" class="btn btn-primary">
+                                Mulai Persiapan
+                            </a>
+                            <a href="#planner" class="btn btn-outline">
+                                Plan Your Trip <span class="nav-badge-opt">Opsional</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAVEL PLANNER PAGE (OPTIONAL FEATURE) -->
+        <section class="section" id="planner">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="badge">FITUR OPSIONAL</div>
+                    <h2 class="section-title">Plan Your Next Trip</h2>
+                    <p class="section-subtitle">Sudah punya rencana perjalanan berikutnya? Buat dan simpan rencana perjalananmu di sini.</p>
+                </div>
+
+                <div class="planner-wrapper fade-up">
+                    <div class="planner-visual text-center">
+                        <img src="assets/images/map_plane.jpg" alt="3D Map Plane Illustration" class="planner-3d-img floating-anim">
+                    </div>
+
+                    <div class="planner-card margin-top-md">
+                        <form id="plannerForm" onsubmit="return false;">
+                            <div class="form-group">
+                                <label for="planDestination">Tujuan Perjalanan <span class="required">*</span></label>
+                                <input type="text" id="planDestination" placeholder="Contoh: Bali / Yogyakarta / Tokyo" value="Bali" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label for="planStartDate">Tanggal Berangkat <span class="required">*</span></label>
+                                    <input type="date" id="planStartDate" value="2026-10-12" required>
+                                </div>
+
+                                <div class="form-group col-6">
+                                    <label for="planEndDate">Tanggal Pulang <span class="required">*</span></label>
+                                    <input type="date" id="planEndDate" value="2026-10-15" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row margin-top-xs">
+                                <div class="form-group col-6">
+                                    <label for="planPeople">Jumlah Orang <span class="required">*</span></label>
+                                    <input type="number" id="planPeople" min="1" value="2" required>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="planNotes">Catatan Tambahan</label>
+                                    <input type="text" id="planNotes" placeholder="Catatan liburan...">
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn btn-primary btn-full margin-top-sm" id="submitPlannerBtn">
+                                Simpan Rencana
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Saved Next Trip Plans List -->
+                    <div class="next-plans-container margin-top-lg hidden" id="nextPlansContainer">
+                        <h3 class="text-center margin-bottom-md">Daftar Rencana Perjalanan Berikutnya</h3>
+                        <div class="next-plans-grid" id="nextPlansGrid">
+                            <!-- Populated via JS from nextTripPlans -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="footer-brand">
+                <span class="brand-text">TRAVELREADY</span>
+            </div>
+            <p class="footer-tagline">“Siapkan Perjalananmu, Nikmati Perjalanannya.”</p>
+            <p class="footer-copy">© 2026 TRAVELREADY. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ADD CHECKLIST ITEM MODAL -->
+    <div class="modal-overlay" id="addChecklistModal">
+        <div class="modal-card">
+            <h3>Tambah Item Checklist</h3>
+            <form id="addChecklistForm" onsubmit="return false;">
+                <div class="form-group text-left margin-top-sm">
+                    <label for="newItemName">Nama Barang <span class="required">*</span></label>
+                    <input type="text" id="newItemName" placeholder="Contoh: Kamera / Masker" required>
+                </div>
+                <div class="form-group text-left margin-top-sm">
+                    <label for="newItemCategory">Kategori <span class="required">*</span></label>
+                    <select id="newItemCategory">
+                        <option value="pakaian">Pakaian</option>
+                        <option value="elektronik">Elektronik</option>
+                        <option value="toiletries">Toiletries / Perawatan</option>
+                        <option value="dokumen">Dokumen</option>
+                        <option value="perlengkapan">Perlengkapan</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </div>
+                <div class="form-row margin-top-md">
+                    <button type="button" class="btn btn-primary col-6" id="saveChecklistBtn">Tambah</button>
+                    <button type="button" class="btn btn-outline col-6" id="closeAddChecklistModalBtn">Batal</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ADD DOCUMENT MODAL -->
+    <div class="modal-overlay" id="addDocModal">
+        <div class="modal-card">
+            <h3>Tambah Dokumen Perjalanan</h3>
+            <form id="addDocForm" onsubmit="return false;">
+                <div class="form-group text-left margin-top-sm">
+                    <label for="newDocName">Nama Dokumen <span class="required">*</span></label>
+                    <input type="text" id="newDocName" placeholder="Contoh: Asuransi Kesehatan / STNK" required>
+                </div>
+                <div class="form-group text-left margin-top-sm">
+                    <label for="newDocCategory">Kategori <span class="required">*</span></label>
+                    <select id="newDocCategory">
+                        <option value="domestik">Domestik</option>
+                        <option value="internasional">Internasional</option>
+                    </select>
+                </div>
+                <div class="form-row margin-top-md">
+                    <button type="button" class="btn btn-primary col-6" id="saveDocBtn">Simpan</button>
+                    <button type="button" class="btn btn-outline col-6" id="closeAddDocModalBtn">Batal</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- DOCUMENT CHECK CONFIRMATION MODAL -->
+    <div class="modal-overlay" id="docModalOverlay">
+        <div class="modal-card">
+            <div class="modal-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7A1F2B" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                    <path d="M7 8h10M7 12h6"></path>
+                </svg>
+            </div>
+            <h3>Konfirmasi Dokumen</h3>
+            <p>Pastikan semua dokumen perjalananmu sudah siap dan diperiksa kembali sebelum berangkat.</p>
+            <button class="btn btn-primary btn-full margin-top-md" id="confirmDocBtn">
+                Sudah Cek
+            </button>
+        </div>
+    </div>
+
+    <!-- TRIP DETAIL MODAL (FULL TRAVEL RECAP) -->
+    <div class="modal-overlay" id="tripDetailModal">
+        <div class="modal-card modal-lg text-left">
+            <div class="detail-modal-header">
+                <div>
+                    <span class="badge-status status-required" id="detailStatusBadge">✓ Persiapan Selesai</span>
+                    <h2 class="detail-modal-title" id="detailDestination">Pantai - Bali</h2>
+                </div>
+                <button class="close-modal-x" id="closeDetailModalX">&times;</button>
+            </div>
+
+            <div class="detail-modal-body margin-top-md">
+
+                <!-- 3D Illustration & Top Details -->
+                <div class="detail-top-recap">
+                    <div class="detail-3d-visual">
+                        <img src="assets/images/hero_suitcase.jpg" alt="3D Destination Illustration" class="detail-3d-img" id="detail3dImg">
+                    </div>
+                    <div class="detail-info-grid">
+                        <div class="info-block">
+                            <span class="info-label">Durasi & Tanggal</span>
+                            <strong class="info-val" id="detailDates">3 Hari (12 Oct - 15 Oct)</strong>
+                        </div>
+                        <div class="info-block">
+                            <span class="info-label">Jumlah Rombongan</span>
+                            <strong class="info-val" id="detailPeople">2 Orang</strong>
+                        </div>
+                        <div class="info-block">
+                            <span class="info-label">Total Budget</span>
+                            <strong class="info-val text-maroon" id="detailBudget">Rp 2.500.000</strong>
+                        </div>
+                        <div class="info-block">
+                            <span class="info-label">Tipe Destinasi</span>
+                            <strong class="info-val" id="detailDestType">🏖️ Pantai</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 1. CHECKLIST: BARANG YANG DIBAWA -->
+                <div class="detail-recap-box margin-top-md">
+                    <div class="recap-box-header">
+                        <h3>🧳 Barang yang Dibawa</h3>
+                        <span class="counter-badge" id="detailChecklistCounter">5 dari 6 barang siap</span>
+                    </div>
+                    <div class="progress-bar-container margin-top-xs">
+                        <div class="progress-bar-fill" id="detailChecklistBar" style="width: 80%;"></div>
+                    </div>
+                    <p class="recap-status-text margin-top-xs text-maroon" id="detailChecklistStatus">✓ Semua barang siap</p>
+
+                    <div class="recap-item-list margin-top-sm" id="detailCheckedItems">
+                        <!-- Populated dynamically via JS: ONLY items checked by user -->
+                    </div>
+                </div>
+
+                <!-- 2. DOKUMEN PERJALANAN -->
+                <div class="detail-recap-box margin-top-md">
+                    <div class="recap-box-header">
+                        <h3>📄 Dokumen Perjalanan</h3>
+                        <span class="counter-badge" id="detailDocsCounter">4 dari 4 dokumen siap</span>
+                    </div>
+                    <p class="recap-status-text margin-top-xs text-maroon" id="detailDocsStatus">✓ Semua dokumen siap</p>
+
+                    <div class="recap-item-list margin-top-sm" id="detailDocsList">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+                </div>
+
+                <!-- 3. MODA TRANSPORTASI & TIMELINE -->
+                <div class="detail-recap-box margin-top-md">
+                    <div class="recap-box-header">
+                        <h3>🚆 Moda Transportasi & Rute</h3>
+                    </div>
+                    <div class="recap-transport-list margin-top-sm" id="detailTransportList">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+
+                    <h4 class="margin-top-md" style="font-size: 0.95rem; font-weight: 700;">⏱️ Timeline Perjalanan:</h4>
+                    <div class="timeline-wrapper margin-top-xs" id="detailTimelineList">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+                </div>
+
+                <!-- 4. BUDGET PERJALANAN -->
+                <div class="detail-recap-box margin-top-md">
+                    <div class="recap-box-header">
+                        <h3>💰 Rincian Budget Perjalanan</h3>
+                    </div>
+                    <div class="detail-budget-breakdown margin-top-sm" id="detailBudgetBreakdown">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+                    <div class="detail-total-budget-banner margin-top-sm text-right">
+                        <span>Total Estimasi Budget:</span>
+                        <h3 class="text-maroon" id="detailTotalBudgetDisplay" style="font-size: 1.5rem;">Rp 2.500.000</h3>
+                    </div>
+                </div>
+
+                <!-- 5. TIPS PACKING KHUSUS -->
+                <div class="detail-recap-box margin-top-md" style="border-left: 4px solid var(--deep-maroon);">
+                    <div class="recap-box-header">
+                        <h3>💡 Tips Packing Destinasi</h3>
+                    </div>
+                    <p class="margin-top-xs" id="detailPackingTipText">
+                        Gunakan waterproof pouch untuk melindungi HP dari air & pasir.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="modal-footer margin-top-lg text-center">
+                <button class="btn btn-primary btn-full" id="closeDetailModalBtn">
+                    Kembali ke Riwayat
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DELETE CONFIRMATION MODAL -->
+    <div class="modal-overlay" id="deleteTripModal">
+        <div class="modal-card text-center">
+            <div class="modal-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#7A1F2B" stroke-width="2">
+                    <polyline points="3 6 5 6 21 6"></polyline>
+                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                </svg>
+            </div>
+            <h3>Hapus Perjalanan Ini?</h3>
+            <p class="margin-top-xs">Apakah Anda yakin ingin menghapus data perjalanan ini dari riwayat?</p>
+            <div class="form-row margin-top-md">
+                <button class="btn btn-primary col-6" id="confirmDeleteBtn">Hapus</button>
+                <button class="btn btn-outline col-6" id="cancelDeleteBtn">Batal</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING BOTTOM NAVIGATION (HP & TABLET) -->
+    <nav class="bottom-nav" id="bottomNav">
+        <div class="bottom-nav-container">
+            <a href="#home" class="bottom-nav-item active" data-section="home">
+                <div class="bottom-nav-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </div>
+                <span class="bottom-nav-label">Home</span>
+            </a>
+
+            <a href="#packing" class="bottom-nav-item" data-section="packing">
+                <div class="bottom-nav-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 11l3 3L22 4"></path>
+                        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                    </svg>
+                </div>
+                <span class="bottom-nav-label">Checklist</span>
+            </a>
+
+            <a href="#dokumen" class="bottom-nav-item" data-section="dokumen">
+                <div class="bottom-nav-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+                <span class="bottom-nav-label">Dokumen</span>
+            </a>
+
+            <a href="#packing" class="bottom-nav-item" data-section="packing">
+                <div class="bottom-nav-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                </div>
+                <span class="bottom-nav-label">Packing</span>
+            </a>
+
+            <a href="#budget" class="bottom-nav-item" data-section="budget">
+                <div class="bottom-nav-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"></path>
+                        <path d="M4 6v12c0 1.1.9 2 2 2h14v-4"></path>
+                        <path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4z"></path>
+                    </svg>
+                </div>
+                <span class="bottom-nav-label">Budget</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toastNotification">
+        <span class="toast-message" id="toastMessage">Notifikasi</span>
+    </div>
+
+    <script src="script.js?v=6"></script>
+</body>
+</html>
